@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>
+            Inspired By
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+		<style>
+            body{
+                margin: 10px;
+                padding: 5px;
+                background-color: rgb(253, 133, 90);
+            }
+            div{
+                
+                margin: 1%;
+            }
+            #option0{
+                display: none;
+                position: relative;   
+            }
+            #option1{
+                display: none;
+                position: relative;   
+            }
+            #option2{
+                display: none;   
+            }
+            .option{
+                display: block;
+            }
+            .content{
+                display: grid;
+                grid-template-columns: 1fr 6fr;
+                
+            }
+            button{
+                width: 100%;
+                margin: 2%;
+            }
+            img{
+                width: 50%;
+                height: auto;
+            }
+        </style>
+        <script>
+            function menu0(){
+                var temp =  document.getElementById("option0");
+                if(temp.style.display==="none")
+                {
+                    temp.style.display="block";
+                }
+                else{
+                    temp.style.display="none";
+                }
+            }
+            function menu1(){
+                var temp =  document.getElementById("option1");
+                if(temp.style.display==="none")
+                {
+                    temp.style.display="block";
+                }
+                else{
+                    temp.style.display="none";
+                }
+            }
+            function menu2(){
+                var temp =  document.getElementById("option2");
+                if(temp.style.display==="none")
+                {
+                    temp.style.display="block";
+                }
+                else{
+                    temp.style.display="none";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="well">
+            <h1 style="color: rgb(167, 5, 5);">Satsangdiksha</h1>
+            
+        </div>
+        <div class="content">                           <!--content-->
+            <div class="well left-panel">                <!--left panel-->
+                <a href="index.html">
+                    <button class="btn btn-primary menu">
+                    Home                    
+                    </button>
+                </a>
+                <button class="btn btn-primary menu" onclick="menu0()">
+                    Mukhpath                    
+                </button>
+                <div id="option0">
+                    <a class="option"  href="shreni1.html">Shreni1</a>
+                    <a class="option"  href="shreni2.html">Shreni2</a>
+                    <a class="option"  href="shreni3.html">Shreni3</a>
+                    <a class="option"  href="shreni4.html">Shreni4</a>
+                    
+                </div>
+                <br>
+                <button class="btn btn-primary menu" onclick="menu1()">
+                    PDF
+                    
+                </button>
+                <div id="option1">
+                    <a class="option"  href="Shreni-1.pdf" target="_blank">Shreni1</a>
+                    <a class="option"  href="Shreni-2.pdf" target="_blank">Shreni2</a>
+                    <a class="option"  href="Shreni-3.pdf" target="_blank">Shreni3</a>
+                    <a class="option"  href="Shreni-4.pdf" target="_blank">Shreni4</a>
+                    <a class="option"  href="Satsang Diksha.pdf" target="_blank">Satsangdiksha</a>
+                </div>
+                <br>
+                <button class="btn btn-primary menu" onclick="menu2()">
+                    About
+                    
+                </button>
+                <div id="option2">
+                    <a class="option"  href="inspiredby.html">Inspired By</a>
+                    <a class="option"  href="about.html">About</a>
+                    <a class="option"  href="publisher.html">Publisher</a>                    
+                </div>
+                <br>
+                
+            </div>
+            <div class="well" id="main">                                      <!--Main content--> 
+                <center>
+                    
+                    <img src="i1.png"/>
+                    <img src="i2.png"/>
+                    <img src="i3.png"/>
+                    <img src="i4.png"/>
+                    <img src="i5.png"/>
+                    <img src="i6.png"/>
+                </center>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
